@@ -199,8 +199,21 @@ python main.py decrypt --in file_path --out file_path --key key_string
 Please look at the examples below:
 
 ```sh
-python main.py encrypt --in test_PamelaGoing.wav --out ./test_encrypted.wav
-python main.py decrypt --in ./test_encrypted.wav --out ./test_decrypted.wav --key gAAAAABmiTwPzV06GoXucoybSIECvmYLnMlJhr6wnBBJaiFDs0_yCdXjFUBdz9W0GpBllrUyN4ct574q_iZ3kIsohHNTSxtU-g==
+# Pamela Going
+python main.py encrypt --in test_PamelaGoing.wav --out ./test_PamelaGoing_encrypted.wav
+python main.py decrypt --in ./test_PamelaGoing_encrypted.wav --out ./test_decrypted.wav --key gAAAAABmiTwPzV06GoXucoybSIECvmYLnMlJhr6wnBBJaiFDs0_yCdXjFUBdz9W0GpBllrUyN4ct574q_iZ3kIsohHNTSxtU-g==
+
+# Måneskin Beggin
+python main.py encrypt --in test_Måneskin_Beggin.wav --out ./Test_encrypted_Måneskin_Beggin.wav
+python main.py decrypt --in ./Test_encrypted_Måneskin_Beggin.wav --out ./Test_decrypted_Måneskin_Beggin.wav --key gAAAAABmnrA4aQ3KGMsD9u6DD5Y-FC4faOtHyMYRN70lo1G3E1KII_pSPgqRaynlxmXV1YwA01bBAG7pP29UenOXqA-m7TvRdQ==
+
+# PinkPanther30
+python main.py encrypt --in test_PinkPanther30.wav --out ./Test_encrypted_pinkpanther30.wav
+python main.py decrypt --in ./Test_encrypted_pinkpanther30.wav --out ./Test_decrypted_pinkpanther30.wav --key gAAAAABmnqMwSK1kmz_2sj94TzvvtWZO1WOpX-ItZwT0CJViUxlYhTSIEOMiId-LoyxKmnbZNGjnrfJx-cwvrJSOMZ7blhzXYw==
+
+# preamble
+python main.py encrypt --in test_preamble.wav --out ./Test_encrypted_preamble.wav
+python main.py decrypt --in ./Test_encrypted_preamble.wav --out ./Test_decrypted_preamble.wav --key gAAAAABmnqPuv_YhzmEGllgJVdcM69hoKh8jLV1rLdTIGDM--pEEYc-NZvFz2Bd2IQIfKSKtpWAEF763aE8MxlTA7MNr5XjJ5g==
 ```
 
 or with fast,
@@ -225,14 +238,5 @@ python test --help
 python plot --help
 python nist --help
 ```
-
-for plotting, testing and generating binary files for NIST refer to `--help`
-
-```sh
-python test --help
-python plot --help
-python nist --help
-```
-
 
 Thanks for reading.
