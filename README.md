@@ -199,21 +199,21 @@ python main.py decrypt --in file_path --out file_path --key key_string
 Please look at the examples below:
 
 ```sh
-python main.py encrypt --in test.wav --out ./test_encrypted.wav
+python main.py encrypt --in test_PamelaGoing.wav --out ./test_encrypted.wav
 python main.py decrypt --in ./test_encrypted.wav --out ./test_decrypted.wav --key gAAAAABmiTwPzV06GoXucoybSIECvmYLnMlJhr6wnBBJaiFDs0_yCdXjFUBdz9W0GpBllrUyN4ct574q_iZ3kIsohHNTSxtU-g==
 ```
 
 or with fast,
 
 ```sh
-python main.py encrypt --fast --in test.wav --out ./test_encrypted.wav
+python main.py encrypt --fast --in test_PamelaGoing.wav --out ./test_encrypted.wav
 main.py decrypt --fast --in ./test_encrypted.wav --out ./test_decrypted.wav --key gAAAAABmiTwPzV06GoXucoybSIECvmYLnMlJhr6wnBBJaiFDs0_yCdXjFUBdz9W0GpBllrUyN4ct574q_iZ3kIsohHNTSxtU-g==
 ```
 
 or short form,
 
 ```sh
-python main.py encrypt -f -i test.wav -i ./test_encrypted.wav
+python main.py encrypt -f -i test_PamelaGoing.wav -i ./test_encrypted.wav
 main.py decrypt -f -i ./test_encrypted.wav -o ./test_decrypted.wav -k
 gAAAAABmiTwPzV06GoXucoybSIECvmYLnMlJhr6wnBBJaiFDs0_yCdXjFUBdz9W0GpBllrUyN4ct574q_iZ3kIsohHNTSxtU-g==
 ```
@@ -225,5 +225,14 @@ python test --help
 python plot --help
 python nist --help
 ```
+
+for plotting, testing and generating binary files for NIST refer to `--help`
+
+```sh
+python test --help
+python plot --help
+python nist --help
+```
+
 
 Thanks for reading.
