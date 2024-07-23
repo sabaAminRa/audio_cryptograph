@@ -1,0 +1,38 @@
+[loggers]
+keys = root, core
+
+[handlers]
+keys = coreHandler, consoleHandler
+
+[formatters]
+keys = coreFileFormatter, coreConsoleFormatter
+
+[logger_root]
+level=DEBUG
+qualname = root
+handlers=consoleHandler
+
+[logger_core]
+handlers = coreHandler, consoleHandler
+level = DEBUG
+qualname = core
+propagate = 0
+
+[handler_coreHandler]
+level = DEBUG
+class = FileHandler
+args = ('src/logs/core.log',)
+formatter = coreFileFormatter
+
+[handler_consoleHandler]
+level= DEBUG
+class=logging.StreamHandler
+formatter = coreConsoleFormatter
+
+[formatter_coreConsoleFormatter]
+format = "%(levelname)s %(asctime)s %(module)s %(message)s"
+datefmt = "%Y-%m-%d %H-%M-%S"
+
+[formatter_coreFileFormatter]
+format = "%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s"
+datefmt = "%Y-%m-%d %H-%M-%S"

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "audio-and-video-steganography"
+version = "0.1.0"
+description = "Audio and video stenography project"
+authors = ["sabaAminRa <ranjbar.saba@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "audio_and_video_steganography"}]
+
+[tool.poetry.dependencies]
+python = "3.12.4"
+typer = "^0.12.3"
+wave = "^0.0.2"
+cryptography = "^42.0.8"
+matplotlib = "^3.9.1"
+scipy = "^1.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

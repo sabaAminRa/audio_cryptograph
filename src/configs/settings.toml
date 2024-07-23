@@ -1,0 +1,16 @@
+[settings]
+
+[settings.extension]
+
+AUDIO = ".wav"
+
+[settings.mode]
+
+ENV_MODE = "dev"
+CYCLES = 3
+
+[settings.log]
+LOG_CONFIG = "configs/logging.toml"
+
+[settings.encryption]
+fkey = "ILRYCAcHIlzzhQTNW6UOxUBBHfDznb2lUJfu3Lj1gJo="
